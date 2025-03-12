@@ -1,5 +1,5 @@
 'use client'
-import React, {useCallback, useRef, useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { CartItem } from "@/hooks/declare";
 import PlusMinus from "./plusMinus";
@@ -31,7 +31,7 @@ function CartItems({ element }: props) {
           <img
             className="lg:w-42 lg:h-42 lg:object-contain"
             src={
-              element?.item.img ||
+              element?.item.img[0] ||
               "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
             }
             alt="Album"

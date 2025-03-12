@@ -6,7 +6,7 @@ import OrderSummary from "./utils/orderSummary";
 // const CartItems = lazy(()=> import("./utils/cartItems"))
 
 
-export default function cart() {
+export default function Cart() {
   
   const {cartItems}=useAppContext()
   return (

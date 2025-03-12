@@ -1,5 +1,5 @@
 "use client";
-import { AppProvider, useAppContext } from "@/hooks/useContextApi";
+import { useAppContext } from "@/hooks/useContextApi";
 import React from "react";
 import Button from "./_button";
 

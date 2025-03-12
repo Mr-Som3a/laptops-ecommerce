@@ -49,9 +49,8 @@ export default function Category() {
             </Link>
             <AddToCart
               item={{id:laptop.id,item:laptop,quantity:1}}
-              children={"Add To Cart"}
               style="btn-outline"
-            />
+            >Add To Cart</AddToCart>
           </div>
         ))}
       </section>

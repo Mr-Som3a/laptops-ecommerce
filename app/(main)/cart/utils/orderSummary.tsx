@@ -1,18 +1,15 @@
 import Link from "next/link";
-import Checkout from "../../checkout/page";
-import React, { useEffect } from "react";
-import { useAppContext } from "@/hooks/useContextApi";
+import React from "react";
 import { totalPrice } from "./cartMath";
 import { CartItem } from "@/hooks/declare";
-import { Span } from "next/dist/trace";
 
 interface Props{
   cartItems:CartItem[]
 }
 function OrderSummary({cartItems}:Props) {
   const Offer=15
-  let OrgPrice=totalPrice(cartItems)
-  let Total=OrgPrice-OrgPrice*(15/100)
+  const OrgPrice=totalPrice(cartItems)
+  const Total=OrgPrice-OrgPrice*(15/100)
   console.log(cartItems)
   return (
     <div>
@@ -33,7 +30,6 @@ function OrderSummary({cartItems}:Props) {
             <span>{Total}$</span>
           </div>
         </div>
-        {/* <Checkout /> */}
         <div className=" flex flex-col mt-2 card-actions items-center">
           <button className="btn btn-primary btn-wide">
             Proceed to Checkout

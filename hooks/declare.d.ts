@@ -13,7 +13,7 @@ export interface Laptop{
     description:string,
     price: number,
     offer:number,
-    img: string,
+    img: string[],
 }
 export interface CartItem{
     id:number,

@@ -10,7 +10,7 @@ export const laptops: Laptop[] = [
         description:'Item Package Dimension - 15799999983884L x 1249999998725W x 2699999997246H inches',
         price: 340,
         offer:15,
-        img: 'https://m.media-amazon.com/images/I/61-EN1HSS5L._AC_SX679_.jpg',
+        img: ['https://m.media-amazon.com/images/I/61-EN1HSS5L._AC_SX679_.jpg','https://m.media-amazon.com/images/I/71eVxVzkO8L._AC_SX522_.jpg','https://m.media-amazon.com/images/I/712mbn6KKJL._AC_SX679_.jpg']
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ export const laptops: Laptop[] = [
         description:'High performance: 12th Gen Intel Core processors distributes performance where you need it the most — saving you time and increasing your ability to do the things you actually want.',
         price: 280,
         offer:15,
-        img: 'https://m.media-amazon.com/images/I/71eVxVzkO8L._AC_SX522_.jpg',
+        img: ['https://m.media-amazon.com/images/I/61-EN1HSS5L._AC_SX679_.jpg','https://m.media-amazon.com/images/I/71eVxVzkO8L._AC_SX522_.jpg','https://m.media-amazon.com/images/I/712mbn6KKJL._AC_SX679_.jpg']
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ export const laptops: Laptop[] = [
         description:'LEAN. MEAN. M3 MACHINE—The blazing-fast MacBook Air with the M3 chip is a superportable laptop that sails through work and play.',
         price: 400,
         offer:15,
-        img: 'https://m.media-amazon.com/images/I/712mbn6KKJL._AC_SX679_.jpg',
+        img: ['https://m.media-amazon.com/images/I/61-EN1HSS5L._AC_SX679_.jpg','https://m.media-amazon.com/images/I/71eVxVzkO8L._AC_SX522_.jpg','https://m.media-amazon.com/images/I/712mbn6KKJL._AC_SX679_.jpg']
     },
     {
         id: 4,
@@ -40,7 +40,7 @@ export const laptops: Laptop[] = [
         description:'[High Speed RAM And Enormous Space] 16GB high-bandwidth RAM to smoothly run multiple applications and browser tabs all at once; 512GB PCIe NVMe M.2 Solid State Drive allows to fast bootup and data transfer',
         price: 560,
         offer:15,
-        img: 'https://m.media-amazon.com/images/I/71N9tTF6pML._AC_SX522_.jpg',
+        img: ['https://m.media-amazon.com/images/I/61-EN1HSS5L._AC_SX679_.jpg','https://m.media-amazon.com/images/I/71eVxVzkO8L._AC_SX522_.jpg','https://m.media-amazon.com/images/I/712mbn6KKJL._AC_SX679_.jpg']
     },
     {
         id: 5,
@@ -50,6 +50,6 @@ export const laptops: Laptop[] = [
         description:'13th Gen Intel Core i7-1355U ASUS webcam shield for instant privacy',
         price: 370,
         offer:15,
-        img: 'https://m.media-amazon.com/images/I/71hQqWzt78L._AC_SX522_.jpg',
+        img: ['https://m.media-amazon.com/images/I/61-EN1HSS5L._AC_SX679_.jpg','https://m.media-amazon.com/images/I/71eVxVzkO8L._AC_SX522_.jpg','https://m.media-amazon.com/images/I/712mbn6KKJL._AC_SX679_.jpg']
     },
 ]

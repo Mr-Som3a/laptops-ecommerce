@@ -1,18 +1,14 @@
 "use client";
-import React, { ClipboardEvent, ElementType, useState } from "react";
+import React from "react";
 
 
 interface Props{
   count:number,
-  // setCount: (e:number)=>void
   handlePlus:()=>void,
   handleMinus:()=>void
 }
 const PlusMinus = ({count,handleMinus,handlePlus}:Props) => {
-  
-//   const [disable,setDisable]=useState(false)
-
-  
+    
   return (
     <div className="flex justify-center items-center">
       <button disabled={count===1?true:false} onClick={handleMinus} name="plus" className="btn min-h-8 h-8 px-2 ">
