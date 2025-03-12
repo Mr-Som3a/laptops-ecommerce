@@ -1,7 +1,3 @@
-import StepOfProgress from "./utils/stepOfProgress";
-
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -9,7 +5,7 @@ export default function RootLayout({
 }>) {
   return (
     <main className="flex flex-col justify-center items-center py-8">
-      <StepOfProgress/>
+      {/* <StepOfProgress/> */}
       {children}
     </main>
   );

@@ -1,12 +1,24 @@
+import { laptop } from "@/app/laptops/laptopDieres"
+import React from "react"
+
 export interface User{
     username:string
     email:string
 }
 export interface Laptop{
-    category:string|null
-    model:string
-    description:string
-    price:number
+    id: number,
+    title:string,
+    model: string,
+    category: string,
+    description:string,
+    price: number,
+    offer:number,
+    img: string,
+}
+export interface CartItem{
+    id:number,
+    item:Laptop,
+    quantity:number
 }
 export interface AppContextType {
     theme: string;
@@ -20,6 +32,10 @@ export interface AppContextType {
     setCategory: (category:string|null)=> void
     laptops:Laptop[]
     setLaptops:React.Dispatch<React.SetStateAction<Laptop[]>>
+    laptop:Laptop|null
+    setLaptop:React.Dispatch<React.SetStateAction<Laptop |null>>
+    cartItems:CartItem[]
+    setCartItems:React.Dispatch<React.SetStateAction<CartItem[]>>
     
 
 }

@@ -1,6 +1,6 @@
 'use client'
 import React, { createContext, useContext, useMemo, useState } from "react";
-import { AppContextType, Laptop, User } from "./declare";
+import { AppContextType,  CartItem,  Laptop, User } from "./declare";
 
 const appContext = createContext<AppContextType | undefined>(undefined);
 
@@ -12,7 +12,9 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({
   const [isLoading, setIsLoading] = useState(false);
   const [category, setCategory] = useState<string|null>(null);
   const [laptops, setLaptops] = useState<Laptop[]>([]);
-
+  const [laptop,setLaptop]= useState<Laptop|null>(null)
+  const [cartItems,setCartItems]= useState<CartItem[]>([])
+  
   const value: AppContextType = useMemo(
     () => ({
       theme,
@@ -25,6 +27,10 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({
       setCategory,
       laptops,
       setLaptops,
+      laptop,
+      setLaptop,
+      cartItems,
+      setCartItems
       // loginUser, // Pass functions as needed
     }),
     [
@@ -38,6 +44,10 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({
       setCategory,
       laptops,
       setLaptops,
+      laptop,
+      setLaptop,
+      cartItems,
+      setCartItems
     ]
   );
 

@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="footer bg-base-200 text-base-content p-10">
-      <aside>
+    <footer className=" flex justify-around bg-base-300 text-base-content p-10">
+      <aside className="flex flex-col space-y-1">
         <svg
           width="50"
           height="50"
@@ -21,21 +21,21 @@ export default function Footer() {
           Providing reliable tech since 1992
         </p>
       </aside>
-      <nav>
-        <h6 className="footer-title">Services</h6>
+      <nav className="flex flex-col space-y-1">
+        <h6 className="footer-title ">Services</h6>
         <a className="link link-hover">Branding</a>
         <a className="link link-hover">Design</a>
         <a className="link link-hover">Marketing</a>
         <a className="link link-hover">Advertisement</a>
       </nav>
-      <nav>
+      <nav className="flex flex-col space-y-1">
         <h6 className="footer-title">Company</h6>
         <a className="link link-hover">About us</a>
         <a className="link link-hover">Contact</a>
         <a className="link link-hover">Jobs</a>
         <a className="link link-hover">Press kit</a>
       </nav>
-      <nav>
+      <nav className="flex flex-col space-y-1">
         <h6 className="footer-title">Legal</h6>
         <a className="link link-hover">Terms of use</a>
         <a className="link link-hover">Privacy policy</a>
